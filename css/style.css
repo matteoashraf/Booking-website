@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/* ////////////////////////////////////////// */
+.dropdown-menu, .card-item, .news-section{
+    box-shadow: 1px 1px 20px 5px rgb(143, 137, 137);
+}
+.modal-backdrop{
+    z-index: 0 !important;
+}
+ /* //////////////////////////////////////////////////////// */
+.accordion-button{
+    background: -webkit-linear-gradient(top,rgb(201, 198, 198),#fff);   
+}
+/* //////////////////////////////////////////////// */
+.tooltip-bottom-right{
+    position: absolute !important;
+    z-index: 5 !important;
+    left: 5.4rem !important;
+    border-radius: 0px 13px 13px !important;
+    visibility: hidden !important;
+}
+.copy-btn:hover .tooltip-bottom-right{
+    visibility: visible !important;
+}
+/* ///////////////////////////////////////////////// */
+.card-item::after{
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    content: "";
+    opacity: 0;
+    position: absolute;
+    transition: all .8s;
+}
+.card-item::before{
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    content: "";
+    opacity: 0;
+    position: absolute;
+    transition: all .8s;
+}
+.card-item:hover::before{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: .5;
+    transition: .8s;
+    border-radius: 5px;
+}
+.card-item:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: .5;
+    border-radius: 5px;
+}
+/* ////////////////////////////////////////////// */
+.bg-image-section{
+    background-image: url(../images/camel-standing-desert-with-palm-trees-background_869293-493.jpg) !important;
+}
+.bg-image-section-1{
+    background-image: url(../images/suitcase-with-hat-camera-airplane_1224603-6910.jpg) !important;
+}
+.bg-image-section, .bg-image-section-1{
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    height: 300px !important;
+}
+/* ///////////////////////////////////////////////////// */
+.card-team-item{
+    background-size: cover;
+    cursor: pointer;
+    transition: .4s;
+}
+.item-1{
+    background-image: url(../images/portrait-handsome-man_23-2150770959.avif);
+}
+.item-2{
+    background-image: url(../images/close-up-woman-reading-book.jpg);
+}
+.item-3{
+    background-image: url(../images/confident-man-with-curly-hair-wearing-blue-shirt-smiles-office-setting_943657-24881.avif);
+}
+.card-team-overley{
+    background-color: rgba(0, 0, 0, .5);
+    transition: .4s;
+}
+.card-team-item:hover{
+    transform: scale(.94);
+}
+.card-team-item:hover .card-team-overley{
+    background-color: rgba(5, 5, 156, .4);
+}
+/* ///////////////////////////////////////////////////////// */
+.news-section-line{
+    height: 5px;
+    width: 40px; 
+    transition: .7s;  
+}
+.news-section:hover .news-section-line{
+    width: 100px;
+}
+.news-section-btn{
+    cursor: default !important;
+}
+.news-section-btn:hover{
+    background-color: rgba(0, 0, 0, .5) !important;
+}
+.news-section-btn-diff:hover{
+    background-color: rgba(0, 0, 255, .7) !important;
+    color: #fff !important;
+}
+.news-section-btn-diff-1:hover{
+    background-color: rgba(167, 2, 2, 0.8) !important;
+    color: #fff !important;
+}
+.news-section-btn-diff-2:hover{
+    background-color: rgb(2, 90, 2) !important;
+    color: #fff !important;
+}
+.news-section-btn-diff-3:hover{
+    background-color: #d19e06 !important;
+    color: #fff !important;
+}
+.news-section-img{
+    clip-path: polygon(100% 0%, 100% 100%, 10% 100%, 0% 0%);
+    transition: .5s;
+}
+.news-section-img-1{
+    clip-path: polygon(100% 0%, 90% 100%, 0 100%, 0% 0%);
+}
+/* /////////////////////////////// */
+section nav a{
+    color: #000;
+    font-size: 13.9px;
+}
+section nav a:hover, footer a:hover{
+    text-decoration: underline;
+}
+section nav span{
+    cursor: default;
+}
+/* //////////////////////////////// */
+footer a {
+    display: block;
+    color: #999595;
+    font-size: 14px;
+    line-height: 30px;
+}
+footer p{
+    font-size: 13px;
+    color: #999595;
+}
+/* ////////////////////////////////////////////////////////////////// */
+@media (width < 768px) {
+    .news-section-img, .news-section-img-1{
+        clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0% 0%);
+        border-radius: 5px !important;
+    }
+}
+@media (width < 992px) {
+    header .first-nav-link{
+        border: none !important;
+    }
+}
+ @media (width < 1150px) {
+    .bg-image-section, .bg-image-section-1{
+        background-position: center !important;
+
+    }
+ }
+
+
+
+
+
+
+
+
+
+   
